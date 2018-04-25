@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* image for background*/
+
+body {
+    background-image: url("the-sea.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+/* nav bar */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(43, 151, 198, 0.85);
+}
+
+ul li {
+    display: inline-block;
+    /* margin: 12px; */
+}
+
+ul li a {
+    padding: 0px;
+}
+
+a:hover {
+    background-color: blue;
+    padding: 20px;
+    margin: 0px;
+    display: inline-block;
+}
