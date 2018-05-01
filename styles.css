@@ -49,6 +49,9 @@ h1 {
 }
 
 
+/* paragraph styles */
+
+
 /* Footer Styles */
 
 footer {
@@ -62,8 +65,9 @@ p {
     margin: 2px 2px;
 }
 
-img {
-    height: 400px;
-    width: 40%;
-    float: right;
+
+/* card styles */
+
+form {
+    text-align: center;
 }

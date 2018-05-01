@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Donate</title>
-    <meta charset="utf-8" /> 
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="products.html">
     <link rel="stylesheet" href="about.html">
@@ -10,9 +12,10 @@
     <link rel="stylesheet" href="faq.html">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Donate</h1>
+
         <nav class="horizontal">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,42 +26,43 @@
                 <li><a href="faq.html">F.A.Q</a></li>
             </ul>
         </nav>
+        <h1>Donate</h1>
     </header>
-        <p>If you would like to make a donation to help improve conditions in the oceans you can donate to our cause below</p>
-        <!-- Credit form -->
-        <form action="validate.html" id="donate" name="donate" method="post">
+    <p class="pDonate">If you would like to make a donation to help improve conditions in the oceans you can donate to our cause below</p>
+    <!-- Credit form -->
+    <form action="validate.html" id="donate" name="donate" method="post">
         <fieldset id="credit">
-        <legend>Credit Card Information</legend>
-        <!-- Where the Customer will place their name -->
-        <label for="cName">Name*</label>
-        <input type="text" name="cName" id="cName" required />
-        <!-- For selecting what card they use -->
-        <fieldset id="card">
-            <label class="cLabel">Credit Card*</label>
-            <label class="cLabel">
+            <legend>Credit Card Information</legend>
+            <!-- Where the Customer will place their name -->
+            <label for="cName">Name*</label>
+            <input type="text" name="cName" id="cName" required />
+            <!-- For selecting what card they use -->
+            <fieldset id="card">
+                <label class="cLabel">Credit Card*</label>
+                <label class="cLabel">
                 <input type="radio" name="credit" value="amerx" required />
                 <img src="amerx.png" alt="American Express" />
             </label>
-            <label class="cLabel">
+                <label class="cLabel">
                 <input type="radio" name="credit" value="master" />
                 <img src="master.png" alt="Master Card" />
             </label>
-            <label class="cLabel">
+                <label class="cLabel">
                 <input type="radio" name="credit" value="master" />
                 <img src="visa.png" alt="Visa" />
             </label>
-            <label class="cLabel">
+                <label class="cLabel">
                 <input type="radio" name="credit" value="discover" />
                 <img src="discover.png" alt="Discover">
             </label>
-        </fieldset>
-        <!-- To create the field for the card and make sure the card has the appropriate length -->
-        <label for="cNumber">Credit Card Number*</label>
-        <input type="text" name="cNumber" id="cNumber" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+            </fieldset>
+            <!-- To create the field for the card and make sure the card has the appropriate length -->
+            <label for="cNumber">Credit Card Number*</label>
+            <input type="text" name="cNumber" id="cNumber" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
 
-        <!-- Selection menu for the expiration date -->
-        <label for="exMonth">Expiration Date*</label>
-        <select name="exMonth" id="exMonth">
+            <!-- Selection menu for the expiration date -->
+            <label for="exMonth">Expiration Date*</label>
+            <select name="exMonth" id="exMonth">
             <option value="mm">mm</option>
             <option value="01">01</option>
             <option value="01">02</option>
@@ -73,10 +77,10 @@
             <option value="01">11</option>
             <option value="01">12</option>
         </select>
-        <!-- to place a slash between the month and year expirations -->
-        <span> / </span>
-        <!-- To select the year of the expriation -->
-        <select name="exYear" id="exYear">
+            <!-- to place a slash between the month and year expirations -->
+            <span> / </span>
+            <!-- To select the year of the expriation -->
+            <select name="exYear" id="exYear">
             <option value="yy">yy</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
@@ -89,16 +93,17 @@
             <option value="2026">2026</option>
         </select>
 
-        <!-- CVC verification for the credit card -->
-        <label for="cvc">CVC*</label>
-        <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
+            <!-- CVC verification for the credit card -->
+            <label for="cvc">CVC*</label>
+            <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
         </fieldset>
 
         <!-- states what is required for the form to be complete -->
         <p id="reqReg">Items needed to be required are marked with a "*"</p>
         <!-- Submit button -->
         <input type="submit" id="subButton" value="Submit">
-        </form>
-        <script src="java.js"></script>
+    </form>
+    <script src="java.js"></script>
 </body>
+
 </html>
