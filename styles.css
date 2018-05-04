@@ -19,6 +19,7 @@ html {
 
 form {
     padding: 10px;
+}
 #bgImage {
     position: absolute;
     z-index: -1;
@@ -26,6 +27,7 @@ form {
     left: 0;
     width: 100%;
 }
+
 
 .fade {
     -webkit-animation-name: fade;
@@ -45,4 +47,28 @@ h1 {
     0% {opacity: 1}
     50% {opacity: 0.4}
     100% {opacity: 1}
+}
+
+/* images */
+* {
+    box-sizing: border-box;
+}
+.img-container{
+    float: left;;
+    width: 33.33%;
+    padding: 6px;
+
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* paragraph styles */
+p{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 1em;
+
+
 }
