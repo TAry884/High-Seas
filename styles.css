@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 nav {
     background-image: url("blue-sea.jpg");
     background: no-repeat;
@@ -19,30 +21,9 @@ html {
 
 form {
     padding: 10px;
-#bgImage {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-}
-
 /* H1 */
 
 h1 {
     text-align: center;
-}
-@keyframes fade {
-    0% {opacity: 1}
-    50% {opacity: 0.4}
-    100% {opacity: 1}
 }

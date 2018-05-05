@@ -45,7 +45,7 @@ function valName() {
         cName.setCustomValidity("");
     }
     //Converts digits into a string
-    function totDig(numStr) {
+    function sumDig(numStr) {
         var totDig = 0;
         for (var i = 0; i < num.length; i++) {
             totDig +=parseInt(numStr.charAt(i));
@@ -81,12 +81,8 @@ function luhn(idNum) {
     }
 
     //Returns if valid or not
-    return totDig(open1, open2) % 10 === 0;
+    return sumDig(open1, open2) % 10 === 0;
 }
-
-/*
-
-Doesn't Work
 
 //Validates that a month has been selected
 function valMonth() {
@@ -107,10 +103,6 @@ function valYear() {
         cYear.setCustomValidity("");
     }
 }
-
-Doesn't work
-
-*/
 
 //Checks to see if the user chose a credit card provider
 function valCredit() {
