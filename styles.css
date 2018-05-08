@@ -1,19 +1,64 @@
+        @charset "UTF-8";
+        /* nav {
 @charset "UTF-8";
 
 
 nav {
     background-image: url("blue-sea.jpg");
     background: no-repeat;
-}
-
-
-/* body {
+} */
+        /* body {
     background-image: url("blue-sea.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 } */
-html {
+        /* html {
     background-color: rgb(129, 169, 237);
+} */
+        /* form styles */
+        
+        form {
+            padding: 10px;
+        }
+        
+        label {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        #bgImage {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+        /* H1 */
+        
+        h1 {
+            padding: 10px;
+        }
+        
+        @keyframes fade {
+            0% {
+                opacity: 1
+            }
+            50% {
+                opacity: 0.4
+            }
+            100% {
+                opacity: 1
+            }
+        }
 }
 
 
