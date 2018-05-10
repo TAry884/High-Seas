@@ -29,21 +29,163 @@
             </div>
         </nav>
         <h1>Products</h1>
-        <div id="product1">
-            <img src="hood.png" alt="Hoodie" />
-            <img src="hood2.png" alt="Hoodie back" />
-            <input type="button" class="payment" />
+        <form action="payment.html" id="ordShop" method="get">
+        <div class="column1">
+            <div id="date">
+                <input type="text" id="ordDate" name="ordDate" readonly />
+            </div>
+            <label for="clothing">Jacket</label>
+            <img src="images/hood.png" alt="Hoodie" />
+            <img src="images/hood2.png" alt="Hoodie back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $40</p>
         </div>
-        <div id="product2">
-            <img src="hoodie.png" alt="Hoodie" />
-            <img src="hoodie2.png" alt="Hoodie back" />
-            <input type="button" class="payment" />
+        <div class="column1">
+            <label for="clothing">Jacket</label>
+            <img src="images/hoodie.png" alt="Hoodie" />
+            <img src="images/hoodie2.png" alt="Hoodie back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $40</p>
         </div>
-        <div id="product3">
-            <img src="black.png" alt="Black Shirt" />
-            <img src="black2.png" alt="Black shirt back" />
-            <input type="button" class="payment" onclick="location.href='payment.html';">
+        <div class="column1">
+            <label for="clothing">Shirt</label>
+            <img src="images/black.png" alt="Black Shirt" />
+            <img src="images/black2.png" alt="Black shirt back" /> 
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $20</p>
         </div>
+        <div class="column1">
+            <label for="clothing">Shirt</label>
+            <img src="images/blue-long.png" alt="Long blue Shirt" />
+            <img src="images/blue-long2.png" alt="Long blue shirt back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $20</p>
+        </div>
+        <div class="column2">
+            <label for="clothing">Shirt</label>
+            <img src="images/long.png" alt="Long sleeve shirt" />
+            <img src="images/long2.png" alt="Long sleeve shirt back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $20</p>
+        </div>
+        <div class="column2">
+            <label for="clothing">Shirt</label>
+            <img src="images/striped.png" alt="Striped shirt" />
+            <img src="images/striped2.png" alt="Striped shirt back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $20</p>
+        </div>
+        <div class="column2">
+            <label for="clothing">Shirt</label>
+            <img src="images/tiedie.png" alt="Tie die shirt" />
+            <img src="images/tiedie2.png" alt="Tie die shirt back" />
+            <select name="qty" class="qty">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <p class="price">Price: $20</p>
+        </div>
+        <div class="column2">
+            <label for="qty">Qty</label>
+            <img src="images/sweats.png" alt="Sweat Pants" />
+            <img src="images/sweats2.png" alt="Sweat Pants back" />
+            <select name="qty" class="qty">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <p class="price">Price: $35</p>
+        </div>
+    </form>
     </header>
     
 
@@ -53,5 +195,4 @@
     
     <script src="java.js"></script>
 </body>
-
 </html>
