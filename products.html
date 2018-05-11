@@ -5,7 +5,7 @@
     <title>Products</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="donate2.html">
+    <link rel="stylesheet" href="donate.html">
     <link rel="stylesheet" href="about.html">
     <link rel="stylesheet" href="contact.html">
     <link rel="stylesheet" href="styles.css">
@@ -21,7 +21,7 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
                     <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="donate2.html">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
@@ -29,15 +29,179 @@
             </div>
         </nav>
         <h1>Products</h1>
-        <form action="payment.html" id="ordShop" method="get">
-        <div class="column1">
-            <div id="date">
-                <input type="text" id="ordDate" name="ordDate" readonly />
+        <!-- categories -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Shirts</a>
+                        <a href="#" class="list-group-item">Pants</a>
+
+                    </div>
+
+                </div>
             </div>
-            <label for="clothing">Jacket</label>
-            <img src="images/hood.png" alt="Hoodie" />
-            <img src="images/hood2.png" alt="Hoodie back" />
-            <select name="qty" class="qty">
+            <!-- item 1 -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/black.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 1</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text"></p>
+
+
+
+                        </div>
+                        <div class="card-footer">
+
+                            <small class="text-muted"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/blue-long.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 2</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text"></p>
+                            <label for="clothing">qty</label>
+                            <select name="qty" class="qty">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                        </select>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/hood.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 3</a>
+                            </h4>
+
+                            <p class="card-text">sdkjfjasfjdsa</p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="">20.99</h5>
+                            <small class="text-muted">jhb</small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/hoodie.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 4</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text">sdkjfjasfjdsa</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">jhb</small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/long.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 5</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/striped.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 6</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"></small>
+                        </div>
+
+                    </div>
+                    <!-- item 6 -->
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <a href=""><img src="Images/tiedye.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="#">shirt 7</a>
+                            </h4>
+                            <h5 class="">20.99</h5>
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"></small>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- 
+        <form action="payment.html" id="ordShop" method="get">
+            <div class="column1">
+                <div id="date">
+                    <input type="text" id="ordDate" name="ordDate" readonly />
+                </div>
+                <label for="clothing">Jacket</label>
+                <img src="images/hood.png" alt="Hoodie" />
+                <img src="images/hood2.png" alt="Hoodie back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -50,13 +214,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $40</p>
-        </div>
-        <div class="column1">
-            <label for="clothing">Jacket</label>
-            <img src="images/hoodie.png" alt="Hoodie" />
-            <img src="images/hoodie2.png" alt="Hoodie back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $40</p>
+            </div>
+            <div class="column1">
+                <label for="clothing">Jacket</label>
+                <img src="images/hoodie.png" alt="Hoodie" />
+                <img src="images/hoodie2.png" alt="Hoodie back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -69,13 +233,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $40</p>
-        </div>
-        <div class="column1">
-            <label for="clothing">Shirt</label>
-            <img src="images/black.png" alt="Black Shirt" />
-            <img src="images/black2.png" alt="Black shirt back" /> 
-            <select name="qty" class="qty">
+                <p class="price">Price: $40</p>
+            </div>
+            <div class="column1">
+                <label for="clothing">Shirt</label>
+                <img src="images/black.png" alt="Black Shirt" />
+                <img src="images/black2.png" alt="Black shirt back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -88,13 +252,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $20</p>
-        </div>
-        <div class="column1">
-            <label for="clothing">Shirt</label>
-            <img src="images/blue-long.png" alt="Long blue Shirt" />
-            <img src="images/blue-long2.png" alt="Long blue shirt back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $20</p>
+            </div>
+            <div class="column1">
+                <label for="clothing">Shirt</label>
+                <img src="images/blue-long.png" alt="Long blue Shirt" />
+                <img src="images/blue-long2.png" alt="Long blue shirt back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -107,13 +271,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $20</p>
-        </div>
-        <div class="column2">
-            <label for="clothing">Shirt</label>
-            <img src="images/long.png" alt="Long sleeve shirt" />
-            <img src="images/long2.png" alt="Long sleeve shirt back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $20</p>
+            </div>
+            <div class="column2">
+                <label for="clothing">Shirt</label>
+                <img src="images/long.png" alt="Long sleeve shirt" />
+                <img src="images/long2.png" alt="Long sleeve shirt back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -126,13 +290,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $20</p>
-        </div>
-        <div class="column2">
-            <label for="clothing">Shirt</label>
-            <img src="images/striped.png" alt="Striped shirt" />
-            <img src="images/striped2.png" alt="Striped shirt back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $20</p>
+            </div>
+            <div class="column2">
+                <label for="clothing">Shirt</label>
+                <img src="images/striped.png" alt="Striped shirt" />
+                <img src="images/striped2.png" alt="Striped shirt back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -145,13 +309,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $20</p>
-        </div>
-        <div class="column2">
-            <label for="clothing">Shirt</label>
-            <img src="images/tiedie.png" alt="Tie die shirt" />
-            <img src="images/tiedie2.png" alt="Tie die shirt back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $20</p>
+            </div>
+            <div class="column2">
+                <label for="clothing">Shirt</label>
+                <img src="images/tiedie.png" alt="Tie die shirt" />
+                <img src="images/tiedie2.png" alt="Tie die shirt back" />
+                <select name="qty" class="qty">
                     <option value="0" selected>0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -164,13 +328,13 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
             </select>
-            <p class="price">Price: $20</p>
-        </div>
-        <div class="column2">
-            <label for="qty">Qty</label>
-            <img src="images/sweats.png" alt="Sweat Pants" />
-            <img src="images/sweats2.png" alt="Sweat Pants back" />
-            <select name="qty" class="qty">
+                <p class="price">Price: $20</p>
+            </div>
+            <div class="column2">
+                <label for="qty">Qty</label>
+                <img src="images/sweats.png" alt="Sweat Pants" />
+                <img src="images/sweats2.png" alt="Sweat Pants back" />
+                <select name="qty" class="qty">
                 <option value="0" selected>0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -183,16 +347,17 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </select>
-            <p class="price">Price: $35</p>
-        </div>
-    </form>
+                <p class="price">Price: $35</p>
+            </div>
+        </form> -->
     </header>
-    
+
 
     <script src="jquery.slim.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    
+
     <script src="java.js"></script>
 </body>
+
 </html>
