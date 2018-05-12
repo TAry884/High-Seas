@@ -18,7 +18,7 @@
 */
 
 //Event listener function to run functions when tasks have been used
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
     document.getElementById("subButton").onclick = submit;
     document.getElementById("cName").oninput = valName;
     document.getElementById("cNumber").oninput = valNumber;
@@ -48,7 +48,7 @@ function valName() {
     function sumDig(numStr) {
         var totDig = 0;
         for (var i = 0; i < num.length; i++) {
-            totDig +=parseInt(numStr.charAt(i));
+            totDig += parseInt(numStr.charAt(i));
         }
     }
     return totDig();
@@ -59,9 +59,9 @@ function valNumber() {
     var cNumber = document.getElementById("cNumber");
     if (cNumber.validity.valueMissing) {
         cNumber.setCustomValidity("Enter the number on your card");
-    } else if  (cNumber.validity.patternMismatch) {
+    } else if (cNumber.validity.patternMismatch) {
         cNumber.setCustomValidity("Please enter a valid card number");
-    } else if (luhn(cNumber.value) === false){
+    } else if (luhn(cNumber.value) === false) {
         cNumber.setCustomValidity("Please enter a legitimate card number");
     } else {
         cNumber.setCustomValidity("");
@@ -73,7 +73,7 @@ function luhn(idNum) {
     var open1 = "";
     var open2 = "";
 
-    for (var i = idNum.length - 1; i >= 0; i -=2) {
+    for (var i = idNum.length - 1; i >= 0; i -= 2) {
         open1 += idNum.charAt(i);
     }
     for (var i = idNum.length - 2; i <= 0; i -= 2) {
@@ -128,4 +128,26 @@ function valCVC() {
     } else {
         cCVC.setCustomValidity("");
     }
+}
+
+
+
+//image modal
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+
+img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+
+var span = document.getElementsByClassName("close");
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+    // img.style.display = "none";
 }
