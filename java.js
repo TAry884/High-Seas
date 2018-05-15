@@ -148,6 +148,12 @@ var span = document.getElementsByClassName("close");
 
 
 span.onclick = function() {
-    modal.style.display = "none";
-    // img.style.display = "none";
+        modal.style.display = "none";
+
+    }
+    //close
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

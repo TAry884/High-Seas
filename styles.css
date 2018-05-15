@@ -1,6 +1,13 @@
     @charset "UTF-8";
     /* form styles */
     
+    #banner {
+        background-image: url("blue-sea.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
     form {
         padding: 10px;
     }
@@ -137,3 +144,4 @@
     div#link {
         padding: 10px;
     }
+    /* nav */
