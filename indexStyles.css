@@ -2,7 +2,10 @@
 
 /* background */
 body {
-    background-image:
+    background-image: url("images/blue-sea.jp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 /* Section styles */
@@ -20,10 +23,13 @@ section#top {
 section#middle {
     position: relative;
     text-align: left;
-    width: 100%;
+    width: 91.5%;
     font-size: 1.3em;
-    padding-left: 3em;
-    padding-right: 3em;
+    /* padding-left: 3em;
+    padding-right: 3em; */
+    margin: 0px auto;
+    background-color: rgba(232, 60, 191, 0.45);
+    
 }
 
 section#bottom {
