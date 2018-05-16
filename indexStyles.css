@@ -47,7 +47,7 @@ section#bottom {
 #footer {
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     background-color: #007bff;
