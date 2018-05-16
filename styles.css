@@ -242,3 +242,9 @@
             text-align: left;
         }
     }
+    /* image */
+    
+    #banner {
+        background-image: url("images/waves1.jpg");
+        background-size: cover;
+    }
