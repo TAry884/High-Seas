@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* background */
+body {
+    background-image: url("images/blue-sea.jp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+/* Section styles */
+section#top {
+    position: relative;
+    text-align: left;
+    width: 60%;
+    font-size: 1.3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+section#middle {
+    position: relative;
+    text-align: left;
+    width: 91.5%;
+    font-size: 1.3em;
+    /* padding-left: 3em;
+    padding-right: 3em; */
+    margin: 0px auto;
+    background-color: rgba(232, 60, 191, 0.45);
+    
+}
+
+section#bottom {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-size: 1.3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+/* Footer styles */
+#footer {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background-color: #007bff;
+}
+
+#footer a {
+    text-align: center;
+    padding: 5em;
+    color: #343a40;
+    
+}
+
+img#ty {
+    position: relative;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    left: 10em;
+    top: 2em;
+}
+
+img#rose {
+    position: relative;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    left: 26em;
+    top: 2em;
+}
+
+img#jaggar {
+    position: relative;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    left: 41em;
+    top: 2em;
+}
+
