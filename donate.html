@@ -29,55 +29,61 @@
                 </ul>
             </div>
         </nav>
-        <h1>Donate</h1>
+        <h1 class="jumbotron">Donate</h1>
     </header>
     <p>If you would like to make a donation to help improve conditions in the oceans you can donate to our cause below</p>
     <!-- Credit form -->
-    <form action="validate.html" id="donate" name="donate" method="post">
-        <fieldset class="form-group">
-            <legend>Credit Card Information</legend>
-            <!-- Where the Customer will place their name -->
-            <div>
-                <label class="form-control-label" for="name">Name*</label>
-                <input class="form-control col-sm-3" type="text" name="cName" id="cName" placeholder="Name" required />
-            </div>
 
-            <!-- For selecting what card they use -->
-            <fieldset id="card">
-                <label class="cLabel">Credit Card*</label>
-                <label class="btn paymentMethod active">
-                <input type="radio" name="credit" value="amerx" required />
+    <div class="creditCardForm">
+        <div class="heading">
+            <h1>Card Information</h1>
+        </div>
+        <legend style="text-align: center;">Credit Card Information</legend>
+        <!-- Where the Customer will place their name -->
+
+
+        <div class="form-group">
+            <label class="form-control-label" for="name">Name*</label>
+            <input style="" class="input-block-level" type="text" name="cName" id="cName" placeholder="Name" required />
+
+        </div>
+
+        <!-- For selecting what card they use -->
+        <fieldset id="card">
+            <label class="form-control-label">Credit Card*</label>
+            <label class="btn paymentMethod active">
+                <input class="input-block-level"type="radio" name="credit" value="amerx" required />
                 <img src="images/amerx.png" alt="American Express" />
             </label>
-                <label class="btn paymentMethod active">
+            <label class="btn paymentMethod active">
                 <input type="radio" name="credit" value="master" />
                 <img src="images/master.png" alt="Master Card" />
             </label>
-                <label class="btn paymentMethod active">
+            <label class="btn paymentMethod active">
                 <input type="radio" name="credit" value="master" />
                 <img src="images/visa.png" alt="Visa" />
             </label>
-                <label class="btn paymentMethod active">
+            <label class="btn paymentMethod active">
                     <input type="radio" name="credit" value="discover" />
                     <img src="images/discover.png" alt="Discover">
                     </label>
-            </fieldset>
-            <!-- To create the field for the card and make sure the card has the appropriate length -->
-            <div class="form-control-label">
-                <label class="col-sm-3 control-label" for="cNumber">Credit Card Number*</label>
-                <input class="form-control col-sm-4" x type="text" name="cNumber" id="cNumber" placeholder="XXXX XXXX XXXX XXXX" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
-                />
+        </fieldset>
+        <!-- To create the field for the card and make sure the card has the appropriate length -->
+        <div class="form-control-label">
+            <label class="control-label" for="cNumber">Credit Card Number*</label>
+            <input class=" input-block-level " x type="text" name="cNumber" id="cNumber" placeholder="XXXX XXXX XXXX XXXX" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+            />
 
-            </div>
+        </div>
 
 
-            <!-- Selection menu for the expiration date -->
-            <div class="form-group">
-                <label class="col-sm-3 control-label" for="exMonth">Expiration Date*</label>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <select class="form-control col-sm-6" name="exMonth" id="exMonth">
+        <!-- Selection menu for the expiration date -->
+        <div class="form-group">
+            <label class="control-label" for="exMonth">Expiration Date*</label>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <select class="form-control col-sm-6" name="exMonth" id="exMonth">
                                     <option value="mm">Month</option>
                                     <option value="01">01</option>
                                     <option value="01">02</option>
@@ -92,12 +98,12 @@
                                     <option value="01">11</option>
                                     <option value="01">12</option>
                                 </select>
-                        </div>
-                        <!-- to place a slash between the month and year expirations -->
-                        <!-- <span> / </span> -->
-                        <!-- To select the year of the expriation -->
-                        <div class="col-sm-3">
-                            <select class="form-control col-sm-6" name="exYear" id="exYear">
+                    </div>
+                    <!-- to place a slash between the month and year expirations -->
+                    <!-- <span> / </span> -->
+                    <!-- To select the year of the expriation -->
+                    <div class="col-sm-3">
+                        <select class="form-control col-sm-6" name="exYear" id="exYear">
                                     <option value="yy">Year</option>
                                     <option value="2018">2018</option>
                                     <option value="2019">2019</option>
@@ -109,25 +115,26 @@
                                     <option value="2025">2025</option>
                                     <option value="2026">2026</option>
                                 </select>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
 
-            <!-- CVC verification for the credit card -->
-            <div class="form-group">
+        <!-- CVC verification for the credit card -->
+        <div class="form-group">
 
-                <label class="col-sm-3 control-label" for="cvc">CVC*</label>
-                <div class="col-sm-3">
-                    <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
+            <label class="input-block-level" for="cvc">CVC*</label>
+            <div class="col-sm-3">
+                <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
 
-                </div>
             </div>
+        </div>
 
 
 
         </fieldset>
+
 
         <!-- states what is required for the form to be complete -->
         <p id="reqReg">Items needed to be required are marked with a "*"</p>
@@ -140,13 +147,13 @@
 
 
         </div>
-    </form>
-    <script src="jquery.slim.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css">
+        </form>
+        <script src="jquery.slim.min.js"></script>
+        <script src="popper.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
 
-    <script src="java.js"></script>
+        <script src="java.js"></script>
 </body>
 
 </html>
