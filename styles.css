@@ -248,3 +248,23 @@
         background-image: url("images/waves1.jpg");
         background-size: cover;
     }
+    
+    #img3 {
+        width: 350px;
+        height: 350px;
+    }
+    
+    #b {
+        background-image: url("images/wave2.jpg");
+        background-size: cover;
+    }
+    
+    #ban {
+        background-image: url("images/wave3.jpg");
+        background-size: cover;
+    }
+    
+    #bann {
+        background-image: url("images/blue-sea.jpg");
+        background-size: cover;
+    }
