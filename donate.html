@@ -33,7 +33,7 @@
             </h1>
         </div>
     </header>
-    <p>If you would like to make a donation to help improve conditions in the oceans you can donate to our cause below</p>
+    <p style="padding-left: 1.5em;"><strong>If you would like to make a donation to help improve conditions in the oceans you can donate to our cause below</strong></p>
     <!-- Credit form -->
     <form action="validate.html" id="donate" name="donate" method="post">
         <fieldset id="credit">
@@ -41,7 +41,7 @@
             <!-- Where the Customer will place their name -->
             <div>
                 <label for="cName">Name*</label>
-                <input type="text" name="cName" id="cName" required />
+                <input type="text" name="cName" id="cName" placeholder="First & Last" required />
             </div>
             <!-- For selecting what card they use -->
             <fieldset id="card">
@@ -66,7 +66,7 @@
             <!-- To create the field for the card and make sure the card has the appropriate length -->
             <div>
                 <label for="cNumber">Credit Card Number*</label>
-                <input type="text" name="cNumber" id="cNumber" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+                <input type="text" name="cNumber" id="cNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
             </div><br/>
 
             <!-- Selection menu for the expiration date -->
@@ -107,12 +107,14 @@
             <!-- CVC verification for the credit card -->
             <div>
                 <label for="cvc">CVC*</label>
-                <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
+                <input type="text" name="cvc" id="cvc" placeholder="XXX(X)" required pattern="^\d{3,4}$" />
             </div>
         </fieldset>
 
         <!-- states what is required for the form to be complete -->
-        <p id="reqReg">Items needed to be required are marked with a "*"</p>
+        <p id="reqReg">
+            Items needed to be required are marked with a <strong>"*"</strong>
+        </p>
         <!-- Submit button -->
         <input type="submit" id="subButton" value="Submit">
     </form>
