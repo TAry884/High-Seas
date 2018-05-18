@@ -33,8 +33,10 @@
         <fieldset id="credit">
         <legend>Credit Card Information</legend>
         <!-- Where the Customer will place their name -->
-        <label for="cName">Name*</label>
-        <input type="text" name="cName" id="cName" required />
+        <div>
+            <label for="cName">Name*</label>
+            <input type="text" name="cName" id="cName" required />
+        </div>
         <!-- For selecting what card they use -->
         <fieldset id="card">
             <label class="cLabel">Credit Card*</label>
@@ -56,10 +58,13 @@
             </label>
         </fieldset>
         <!-- To create the field for the card and make sure the card has the appropriate length -->
-        <label for="cNumber">Credit Card Number*</label>
-        <input type="text" name="cNumber" id="cNumber" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+        <div>
+            <label for="cNumber">Credit Card Number*</label>
+            <input type="text" name="cNumber" id="cNumber" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+        </div><br/>
 
         <!-- Selection menu for the expiration date -->
+        <div>
         <label for="exMonth">Expiration Date*</label>
         <select name="exMonth" id="exMonth">
             <option value="mm">mm</option>
@@ -91,10 +96,13 @@
             <option value="2025">2025</option>
             <option value="2026">2026</option>
         </select>
+        </div><br/>
 
         <!-- CVC verification for the credit card -->
-        <label for="cvc">CVC*</label>
-        <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
+        <div>
+            <label for="cvc">CVC*</label>
+            <input type="text" name="cvc" id="cvc" required pattern="^\d{3,4}$" />
+        </div>
         </fieldset>
 
         <!-- states what is required for the form to be complete -->

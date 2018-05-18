@@ -268,3 +268,19 @@
         background-image: url("images/blue-sea.jpg");
         background-size: cover;
     }
+    
+    #donate {
+        margin: auto;
+        width: 40%;
+    }
+
+    #credit {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+
